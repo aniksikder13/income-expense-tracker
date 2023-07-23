@@ -1,0 +1,49 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul, ol{
+  list-style: none;
+}
+
+body{
+  background-color: #f9f9f9;
+}
+
+#root{
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 70px 1fr 60px;
+  grid-row-gap: 30px;
+}
+
+footer, header{
+  text-align: center;
+  background-color: white;
+  padding: 20px 15px;
+  border: 1px solid #ddd;
+}
+
+header ul a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #00b618;
+  padding: 0px 15px;
+}
+
+header ul{
+  display: flex;
+  justify-content: center;
+
+}
+
+.active{
+  color: rgb(0, 121, 0);
+}
+
+.container{
+  max-width: 1200px;
+  margin: auto;
+}
