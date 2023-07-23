@@ -1,7 +1,7 @@
 import './App.css'
 import Income from './pages/Income'
 import Expense from './pages/Expense'
-import { Routes, Route, Navigate } from 'react-router-dom'
+import { Routes, Route, Navigate,  } from 'react-router-dom'
 
 function App() {
   return (

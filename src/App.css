@@ -29,7 +29,7 @@ footer, header{
 header ul a {
   text-decoration: none;
   font-size: 1.2rem;
-  color: #00b618;
+  color: #1f81e2;
   padding: 0px 15px;
 }
 
@@ -40,10 +40,17 @@ header ul{
 }
 
 .active{
-  color: rgb(0, 121, 0);
+  color: #0c56a0;
 }
 
 .container{
-  max-width: 1200px;
+  max-width: 700px;
   margin: auto;
+}
+
+form{
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px 15px;
 }
