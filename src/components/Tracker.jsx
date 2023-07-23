@@ -1,4 +1,4 @@
-import Form from "./form"
+import Form from "./Form"
 import TrackingList from "./TrackingList"
 
 export default function Tracker(props) {
