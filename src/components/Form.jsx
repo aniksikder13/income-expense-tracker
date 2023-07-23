@@ -10,6 +10,7 @@ export default function Form(props) {
     const value= e.target.value
     setTrack({
       ...track,
+      id: Date.now(),
       [name]: value
     })
   }
@@ -21,17 +22,19 @@ export default function Form(props) {
     } else {
       props.onExpense(track)
     }
+    e.target[2].value=''
+    e.target[0].value=''
   }
 
   return (
-    <form onSubmit={formHandler}>
+    <form onSubmit={formHandler} className='innerContainer'>
       <h3>Your {textLabel}</h3> <br />
       <Box
         sx={{
           width: '100%',
         }}
       >
-        <TextField fullWidth label={textLabel} id={textLabel} name={textLabel} type='number' onChange={inputHandler} />
+        <TextField fullWidth label={textLabel} id={textLabel} name='money' type='number' onChange={inputHandler} />
       </Box>
       <Box
         sx={{

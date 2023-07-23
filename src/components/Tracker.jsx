@@ -9,7 +9,7 @@ export default function Tracker(props) {
           onIncome={data => props.onIncome(data)} 
           onExpense={data => props.onExpense(data)} 
         />
-        <TrackingList type={props.type} />
+        {props.trackData.length > 0 && <TrackingList type={props.type} trackData= {props.trackData} />}
     </div>
   )
 }
