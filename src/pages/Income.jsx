@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import Tracker from "../components/tracker";
+import Tracker from "../components/Tracker";
 
 export default function Income() {
   return (
